@@ -8,15 +8,9 @@ export class Game {
 
         this.columns = 20;
 
-        //create snake 
         this.snake = new Snake();
 
-        //create food
         this.food = null;
 
     }
-    //set direction
-    //update the game state
-    // end game
-
 }

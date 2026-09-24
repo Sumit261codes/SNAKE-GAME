@@ -12,7 +12,7 @@ const createBoard = () => {
         for (let x = 0; x < game.columns; x++) {
 
             const cell = document.createElement('div');
-            cell.classList.add('cell');  // add a class to the cell for styling
+            cell.classList.add('cell');  
             cell.dataset.x = x;
             cell.dataset.y = y;
             board.appendChild(cell);
@@ -22,9 +22,8 @@ const createBoard = () => {
 }
 
 const Render = () => {
-    const cells = board.children; // Get all cells in the board
+    const cells = board.children; 
 
-    // Snake
 
     game.snake
         .getBody()
@@ -57,15 +56,10 @@ const Render = () => {
 }
 
 const startGame = () => {
-    // clearInterval(interval);
-
-    //instance of game
     game = new Game();
 
-    //craete a board
     createBoard();
 
-    //render the snake
     Render();
 
 

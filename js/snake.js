@@ -7,15 +7,6 @@ export class Snake {
             { x: 8, y: 10 },
         ];
     }
-    //get head
-
-    //move
-
-    //remove tail
-
-    //grow
-
-    //get body
     getBody() {
 
         return this.body;
